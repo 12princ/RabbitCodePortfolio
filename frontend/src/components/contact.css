@@ -1,0 +1,81 @@
+/* Contact Form Section */
+
+.contact-section {
+  background-color: #181818;
+  padding: 50px 20px;
+  text-align: center;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 48%;
+  padding: 15px;
+  margin: 10px;
+  background-color: #222;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+.form-textarea {
+  width: 100%;
+  padding: 15px;
+  background-color: #222;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  min-height: 130px;
+}
+
+.send-button {
+  background: #96bf48 !important;
+  color: #10171e !important;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  opacity: 0.7;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.content-side .section-headertitle,
+.subtitle,
+.contenttwo .section-headertitle,
+.content .section-headertitle,
+.content h3,
+.services h3,
+.industries h3 {
+  background-color: #96bf48;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.success-message,
+.email-warning {
+  margin-top: 40px; /* Space above the messages */
+  margin-bottom: 20px; /* Space below the messages */
+  text-align: center; /* Center the messages */
+}
+
+.email-warning {
+  color: red; /* Color for the warning message */
+}

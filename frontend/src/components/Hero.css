@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+/* Hero.css */
+.hero {
+
+  background: linear-gradient(127deg, #0F0F0F 16%, #0F0F0F 44%, rgba(150, 191, 72, 1) 123%, #10171E 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+}
+body {
+  margin: 0;
+  background-color: #0f0f0f;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+
+.section-headertitle {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-in-out;
+  font-weight: 500;
+}
+.hero-content {
+  max-width: 50%;
+  margin: 6% auto 8%;
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  width: 100%;
+  margin: 0 auto 20px;
+  background: none;
+  -webkit-text-fill-color: #96bf48;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 40px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero-title,
+.footer-services h4,
+.footer-company h4,
+.footer-office h4,
+.contact-section h2,
+.service-form .section-headertitle,
+.tools-section .section-headertitle,
+.projects .section-headertitle,
+.footerwrapper h2 {
+  color: #96bf48;
+  background: none;
+  -webkit-text-fill-color: #96bf48;
+ 
+}
+
+.hero-btn {
+  padding: 15px 30px;
+  font-size: 1rem;
+  background-color: #b44d40;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #a03a2d;
+}
+
+.metrics-container {
+  display: flex;
+  margin-bottom: 80px;
+  width: 100%;
+}
+
+h2.metric-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+p.metric-label {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+/* Tablets and small screens */
+@media (max-width: 1024px) {
+  /* .hero {
+    height: inherit;
+  } */
+  .hero-content {
+    max-width: 80%;
+    margin: 115px auto 0%;
+  }
+  h2.metric-value {
+    font-size: 1.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+  }
+
+  .hero-btn {
+    font-size: 0.9rem;
+    padding: 12px 25px;
+  }
+  
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  .hero {
+    background-attachment: scroll;
+    /* Disables parallax on mobile for performance */
+  }
+  .hero-content {
+    margin: 150px auto 0px;
+    max-width: 100%;
+  }
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  .contact-section h2,
+  .section-headertitle {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  .hero-btn {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+  }
+
+}

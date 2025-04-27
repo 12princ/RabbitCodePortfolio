@@ -1,0 +1,270 @@
+.principals-section {
+  padding: 8rem 2rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: white;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.our-story h2 {
+  margin-bottom: 14px;
+}
+.story-content p {
+  opacity: 0.7;
+}
+.section-subtitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.content-grid {
+  display: grid;
+  gap: 3rem;
+  margin-bottom: 3%;
+}
+
+.block-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.block-text {
+  color: #666;
+  line-height: 1.6;
+}
+
+.section-subtitle {
+  font-size: 2.5rem;
+}
+
+.content-grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.block-title {
+  font-size: 1.5rem;
+}
+
+.mastermind-section {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 4rem 2rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  max-width: 800px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  position: relative;
+}
+
+.member-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.member-info {
+  margin-top: 1rem;
+}
+
+.member-name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.linkedin-icon {
+  color: #0077b5;
+}
+
+.member-title {
+  font-size: 0.875rem;
+  color: #a0a0a0;
+  margin-top: 0.25rem;
+}
+
+.member-2 {
+  margin-top: 2rem;
+}
+
+.member-3 {
+  margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+  .section-heading {
+    font-size: 3.5rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.mastermind {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.mastermind-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mastermind-subtitle {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  color: #999;
+}
+
+.mastermind-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  width: 30%;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.member-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.member-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.member-role {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+.linkedin-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkedin-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+@media (max-width: 768px) {
+  .mastermind-title {
+    font-size: 2rem;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+}
+
+.metrics-container {
+  display: flex;
+  margin: 80px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.metric-item {
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding: 20px 20px;
+  text-align: center;
+  max-width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 0 15px;
+}
+h2.metric-value {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+p.metric-label {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .section-subtitle {
+    font-size: 2rem;
+  }
+  h2.metric-value {
+    font-size: 1.5rem;
+  }
+  .block-title {
+    font-size: 1.5rem;
+  }
+  .metric-item {
+    margin: 0 15px 15px;
+    padding: 20px 10px;
+    max-width: 150px;
+  }
+  .metrics-container {
+    margin: 80px 0 40px;
+  }
+}
+@media (max-width: 767px) {
+  .metric-item {
+    margin: 0 8px 15px;
+    padding: 20px 18px;
+  }
+  .metrics-container {
+    gap: 0;
+  }
+}

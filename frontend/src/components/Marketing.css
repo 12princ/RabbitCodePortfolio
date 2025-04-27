@@ -1,0 +1,86 @@
+/* Services.css */
+
+.app-containe {
+  padding: 20px;
+  max-width: 1200px;
+  font-family: "Jost", sans-serif;
+  margin: 0px auto 60px;
+}
+
+.tools-section {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tools-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* Center the tool items */
+  gap: 20px;
+  /* Add space between items */
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 180px;
+  background-color: #232520;
+  border: 1px solid #232520;
+  padding: 15px 20px;
+  color: white;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1 1 150px;
+  /*filter: grayscale(90%);
+   -webkit-filter: grayscale(90%);*/
+  -webkit-transition: 0.3s; 
+  -o-transition: 0.3s;
+  transition: 0.3s;
+
+}
+
+
+ .tool-item:hover p{
+ color: #96bf48;
+ }
+ .tool-item:hover{
+	border: 1px solid #96bf48;  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+
+
+.tool-item p {
+  margin: 0px;
+}
+
+.tool-item img {
+  width: 70px;
+ 
+  margin: 0 auto 24px;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .tools-grid {
+    width: 80%;
+    align-items: center;
+    margin: 0px auto 30px;
+    padding: 0 15px;
+   
+  }
+  .app-containe {
+    margin: 0px auto 12px;
+  }
+}
+@media (max-width: 767px) {
+  .tools-grid{
+padding: 0;
+    width: 100%;
+}
+}
+@media (max-width: 350px) {
+  .tool-item{
+    max-width: 120px;
+  }
+}

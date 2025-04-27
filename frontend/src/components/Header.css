@@ -1,0 +1,190 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  font-family: "Jost", sans-serif;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #0f0f0f ;
+  z-index: 10;
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+.header.scrolled {
+  background-color: rgb(0 0 0 / 71%);
+}
+
+body {
+  background-color: #000;
+}
+
+.logos img {
+  width: 55px;
+  height: auto;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.home,
+.about,
+.project,
+.contact {
+  padding: 10px 24px;
+  font-family: "Jost", sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: 600;
+  border-radius: 30px;
+  color: white;
+  background-color: transparent;
+}
+
+.home:hover,
+.about:hover,
+.project:hover,
+.contact:hover {
+  color: #96bf48; /* Purple on hover */
+}
+
+/* Specific background colors for Project and Contact */
+
+.contact {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.contact:hover {
+  background-color: #dedede;
+}
+
+.btn-44,
+.btn-44 *,
+.btn-44 :after,
+.btn-44 :before,
+.btn-44:after,
+.btn-44:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-44 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background: #96bf48;
+  color: #0f0f0f;
+  cursor: pointer;
+  font-family: "Jost", sans-serif;
+  font-size: 100%;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-44:hover {
+  color: #96bf48;
+}
+.btn-44:disabled {
+  cursor: default;
+}
+.btn-44:-moz-focusring {
+  outline: auto;
+}
+.btn-44 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-44 [hidden] {
+  display: none;
+}
+.btn-44 {
+  border: 0;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  padding: 0.9rem 1.9rem;
+  position: relative;
+background: #96bf48;
+  color:#fff ;
+}
+.btn-44 span {
+  font-weight: 400;
+  mix-blend-mode: difference;
+}
+.btn-44:after,
+.btn-44:before {
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -100%;
+  transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+  width: 100%;
+  will-change: transform;
+}
+.btn-44:after {
+  background: #ffffff;
+  transition-delay: 0.13s;
+  z-index: -1;
+}
+.btn-44:hover:after,
+.btn-44:hover:before {
+  transform: translateY(100%);
+  background: #fff;
+  z-index: -4;
+}
+@media (max-width: 767px) {
+  .btn-44 {
+    padding: 0.7rem 1.1rem;
+    font-size: 12px;
+  }
+  .header {
+    padding: 10px 20px;
+  }
+  .header {
+    padding: 10px;
+  }
+
+  .logos {
+    margin-bottom: 10px;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .home,
+  .about,
+  .project,
+  .contact {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    text-align: center;
+    display: flex;
+  }
+
+  .home,
+  .about,
+  .project,
+  .contact {
+    padding: 10px;
+  }
+}
+@media (max-width: 350px) {
+  .nav {
+    gap: 5px;
+  }
+}

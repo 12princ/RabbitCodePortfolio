@@ -1,0 +1,270 @@
+.page-container {
+  min-height: 100vh;
+  background-color: #0f0f0f; /* Changed from #1e1e2f */
+  color: #fff; /* Changed from #ffffff */
+  padding: 7rem 2rem 3rem;
+  font-family: "Jost", sans-serif;
+}
+
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.published-tag {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.published-tag span {
+  background-color: #96bf48;  color: #ffffff; /* Changed from #c0c0c0 */
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+}
+
+.main-title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.project-link {
+  margin-bottom: 16px;
+}
+.subtitle {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  color: #3498db; /* Changed from #b794f4 */
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.description p {
+  color: #ffffff; /* Changed from #c0c0c0 */
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.official-website-link {
+  color: #96bf48;; /* Changed from #B794F4 */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding-right: 15px;
+}
+.official-website-link:hover {
+  color: #fff; /* Changed from #9F7AEA */
+}
+
+.info-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.services h3,
+.industries h3 {
+  color: #3498db; /* Changed from #b794f4 */
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.services ul,
+.industries ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services li,
+.industries li {
+  color: #ffffff; /* Changed from #c0c0c0 */
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1025px) {
+  .subtitle,
+  .main-title {
+    font-size: 3rem;
+  }
+}
+
+.image-banner {
+  margin-bottom: 2rem;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-top: 24px;
+}
+.contenttwo,
+.content {
+  max-width: 800px;
+  margin: 32px auto 10px;
+  text-align: center;
+}
+.contenttwo .section-headertitle,
+.content .section-headertitle {
+  margin-bottom: 16px;
+}
+.content h3 {
+  font-size: 24px;
+  width: 80%;
+  margin: 0 auto 16px;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.gallery-image {
+  width: 48%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Add this to your existing ProductPage.css file */
+/* image-content-gallery*/
+
+.image-content-gallery {
+  display: flex;
+
+  margin-top: 1.5rem;
+  gap: 2rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-side,
+.image-side {
+  width: 48%;
+}
+.content-side .section-headertitle {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.content-side h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.content-side p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.image-side .gallery-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.banner-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.banner-video {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.content-side,
+.image-side {
+  width: 48%;
+}
+
+.content-side h1 {
+  font-size: 2.5rem;
+}
+
+.content-side h1 {
+  font-size: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .content-side {
+    margin-bottom: 20px;
+  }
+  .content-side .section-headertitle {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .content-side h2.section-headertitle {
+    font-size: 2em;
+    margin-bottom: 16px;
+  }
+  .subtitle,
+  .main-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .content-grid {
+    gap: 0rem;
+    grid-template-columns: auto;
+  }
+  .info-columns {
+    margin-bottom: 16px;
+  }
+  .published-tag {
+    margin-top: 1rem;
+  }
+  .image-gallery {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .gallery-image {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .image-content-gallery {
+    flex-direction: column;
+    gap: 0;
+  }
+  .content-side,
+  .image-side {
+    width: 100%;
+  }
+  .contenttwo,
+  .content {
+    margin: 24px auto 10px;
+  }
+  .content p {
+    margin-bottom: 24px;
+  }
+  img.banner-image[alt="logo"] {
+    margin-bottom: 18px;
+  }
+  .banner-image{
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,90 @@
+/* Contact Form Section */
+.contact-section {
+    background-color: #181818;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+  }
+  
+  .form-input {
+    width: 48%;
+    padding: 15px;
+    margin: 0;
+    background-color: #222;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .form-textarea {
+    width: 100%;
+    padding: 15px;
+    background-color: #222;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    min-height: 150px;
+  }
+  
+  .send-button {
+    background-color: #eee;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .send-button:hover {
+    opacity: 0.7;
+    background-color: #eee;
+  }
+  
+  .back-button {
+    position: absolute;        /* Allow positioning relative to the parent container */
+    top: 30px;                 /* Adjust top position (you can change the value as needed) */
+    left: 30px;                /* Adjust left position (you can change the value as needed) */
+    padding: 10px 15px;        /* Add padding for better spacing */
+    background-color: #d18fa1; /* Button background color */
+    color: white;              /* Button text color */
+    border: none;              /* Remove border */
+    border-radius: 5px;        /* Add rounded corners */
+    cursor: pointer;           /* Change cursor to pointer on hover */
+    font-size: 16px;           /* Set font size */
+  }
+  
+  .back-button:hover {
+    background-color: #c86f86; /* Darken the background on hover */
+  }
+  @media (max-width: 576px) {
+    .contact-section h2 {
+      font-size: 30px;
+      font-weight: 400;
+    }
+    .contact-section h2 br{
+      display: none;
+    }
+  }

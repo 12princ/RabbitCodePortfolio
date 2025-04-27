@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  margin: 0;
+ 
+  font-family: 'Jost';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Jost';
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Jost';
+  font-weight: 300;
+  font-style: normal;
+  src: url('./Jost/Jost-VariableFont_wght.ttf') format('truetype'),
+      /* url('/fonts/jost-300.woff') format('woff'),
+       url('/fonts/jost-300.ttf') format('truetype');
+*/
+       }

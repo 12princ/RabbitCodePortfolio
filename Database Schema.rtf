@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2818
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Database Schema\
+\
+ Tables\
+\
+ 1. Products\
+- product_id (Primary Key, INT, Auto Increment): Unique identifier for each product.\
+- name (VARCHAR): Name of the product.\
+- description (TEXT): Detailed description of the product.\
+- price (DECIMAL): Price of the product.\
+- created_at (DATETIME): Timestamp when the product was created.\
+- updated_at (DATETIME): Timestamp when the product was last updated.\
+\
+ 2. Images\
+- image_id (Primary Key, INT, Auto Increment): Unique identifier for each image.\
+- product_id (Foreign Key, INT): References `Products(product_id)`.\
+- image_url (VARCHAR): URL or path to the image file.\
+- alt_text (VARCHAR): Alternative text for the image.\
+- is_primary (BOOLEAN): Indicates if this image is the primary image for the product.\
+\
+ 3. Videos\
+- video_id (Primary Key, INT, Auto Increment): Unique identifier for each video.\
+- product_id (Foreign Key, INT): References `Products(product_id)`.\
+- video_url (VARCHAR): URL or path to the video file.\
+- description (TEXT): Description of the video content.\
+\
+ 4. Categories\
+- category_id (Primary Key, INT, Auto Increment): Unique identifier for each category.\
+- category_name (VARCHAR): Name of the category.\
+\
+ 5. Product_Categories\
+- product_id (Foreign Key, INT): References `Products(product_id)`.\
+- category_id (Foreign Key, INT): References `Categories(category_id)`.\
+- (Composite Primary Key: product_id, category_id)}
